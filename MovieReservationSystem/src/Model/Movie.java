@@ -5,6 +5,12 @@ public class Movie {
     private int fee;
     private String title;
 
+    public Movie(DiscountPolicy discountPolicy, int fee, String title) {
+        this.discountPolicy = discountPolicy;
+        this.fee = fee;
+        this.title = title;
+    }
+
     public int getDefaultFee() {
         return fee;
     }

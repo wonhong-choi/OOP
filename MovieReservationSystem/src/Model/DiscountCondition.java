@@ -1,5 +1,5 @@
 package Model;
 
-public class DiscountCondition {
-
+public interface DiscountCondition {
+    public abstract boolean isSatisfied(Screening screening);
 }
